@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>VideoPlayer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <div class="video-wrapper">
+        <video id="videoPlayer" control>
+            <source src="vide0-1.mp4" type="video/mp4" data-resolution="144p">
+            <source src="video-2.mp4" type="video/mp4" data-resolution="240p">
+            <source src="video-3.mp4" type="video/mp4" data-resolution="320p">
+            <source src="video-1.mp4" type="video/mp4" data-resolution="480p">
+            <source src="video-2.mp4" type="video/mp4" data-resolution="720p">
+            <source src="video-3.mp4" type="video/mp4" data-resolution="1080p">
+            your browser does not support the video tag.
+        </video>
+    </div>
+        <div class="controls">
+            <button id="playPauseBtn">Play/Pause</button>
+            <button id="backwardBtn"> <<5s</button>
+            <button id="forwardBtn">10s >></button>
+            <select id="resoulutionSelect">
+                <option value="videos/videos_144p.mp4">144p</option>
+                <option value="videos/videos_240p.mp4">240p</option>
+                <option value="videos/videos_320p.mp4">320p</option>
+                <option value="videos/videos_480p.mp4">480p</option>
+                <option value="videos/videos_720p.mp4">720p</option>
+                <option value="videos/videos_1080p.mp4">1080p</option>
+                </select>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
